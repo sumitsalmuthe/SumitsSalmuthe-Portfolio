@@ -1,0 +1,56 @@
+.sidebar {
+
+    position: fixed;
+
+    left: 32px;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    z-index: 1000;
+
+}
+
+.sidebar-icons {
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 22px;
+
+}
+
+.sidebar-icons a {
+
+    color: var(--color-text-light);
+
+    font-size: 18px;
+
+    transition: .25s;
+
+}
+
+.sidebar-icons a:hover {
+
+    color: var(--color-primary);
+
+    transform: translateY(-2px);
+
+}
+
+.sidebar-line {
+
+    width: 1px;
+
+    height: 120px;
+
+    background: var(--color-border);
+
+    margin-top: 24px;
+
+}

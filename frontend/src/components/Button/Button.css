@@ -1,0 +1,47 @@
+.btn {
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:15px 30px;
+
+    border-radius:80px;
+
+    font-size:15px;
+
+    font-weight:500;
+
+    transition:.25s ease;
+
+}
+
+.btn.primary{
+
+    background:var(--color-text);
+
+    color:#fff;
+
+}
+
+.btn.primary:hover{
+
+    background:#000;
+
+}
+
+.btn.secondary{
+
+    border:1px solid var(--color-border);
+
+    color:var(--color-text);
+
+}
+
+.btn.secondary:hover{
+
+    border-color:var(--color-text);
+
+}

@@ -1,0 +1,15 @@
+.layout {
+
+    width: 100%;
+
+    min-height: 100vh;
+
+}
+
+.container {
+
+    width: min(90%, 1180px);
+
+    margin-inline: auto;
+
+}

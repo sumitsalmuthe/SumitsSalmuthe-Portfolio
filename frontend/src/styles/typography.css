@@ -1,0 +1,42 @@
+body{
+
+    font-family: var(--font-family);
+
+}
+
+h1{
+
+    font-size: var(--fs-3xl);
+    font-weight: var(--fw-bold);
+    line-height: 1.1;
+
+}
+
+h2{
+
+    font-size: var(--fs-2xl);
+    font-weight: var(--fw-bold);
+
+}
+
+h3{
+
+    font-size: var(--fs-xl);
+    font-weight: var(--fw-semibold);
+
+}
+
+p{
+
+    font-size: var(--fs-md);
+    color: var(--color-text-light);
+    line-height: 1.8;
+
+}
+
+a{
+
+    text-decoration: none;
+    color: inherit;
+
+}

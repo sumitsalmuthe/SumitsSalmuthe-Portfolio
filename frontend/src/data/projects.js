@@ -22,7 +22,7 @@ export const projects = [
 
     github: "https://github.com/sumitsalmuthe/Lumora-Full-Stack-Story-Publishing-Platform",
 
-    live: "#",
+    live: null,
   },
 
   {
@@ -43,7 +43,7 @@ export const projects = [
 
     github: "https://github.com/sumitsalmuthe/Civixa---Smart-Civic-Reporter",
 
-    live: "#",
+    live: null,
   },
 
   {
@@ -62,9 +62,9 @@ export const projects = [
       "MongoDB",
     ],
 
-    github: "#",
+    github: null,
 
-    live: "#",
+    live: null,
   },
 
   {
@@ -82,8 +82,9 @@ export const projects = [
       "JavaScript",
     ],
 
-    github: "https://github.com/sumitsalmuthe/SumitsSalmuthe-Portfolio",
-
-    live: "#",
+    github:
+  "https://github.com/sumitsalmuthe/SumitsSalmuthe-Portfolio",
+live:
+  "https://sumitsalmutheportfolio.vercel.app",
   },
 ];

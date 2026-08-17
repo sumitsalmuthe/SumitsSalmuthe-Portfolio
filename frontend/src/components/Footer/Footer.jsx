@@ -43,9 +43,15 @@ const Footer = () => {
                 <FaLinkedinIn />
               </a>
 
-              <a href="mailto:sumitsalmuthe509@gmail.com">
-                <FaEnvelope />
-              </a>
+              <a
+  href="https://mail.google.com/mail/?view=cm&fs=1&to=sumitsalmuthe509@gmail.com"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Email me"
+  title="Email me"
+>
+  <FaEnvelope />
+</a>
 
             </div>
 

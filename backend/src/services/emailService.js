@@ -14,33 +14,79 @@ const sendContactEmail = async ({
 
     replyTo: email,
 
-    subject: `📩 Portfolio Contact - ${subject}`,
+    subject: `Portfolio Contact — ${subject}`,
+
+    text: `
+New Portfolio Contact
+
+Name: ${name}
+Company: ${company || "Not Provided"}
+Email: ${email}
+Subject: ${subject}
+
+Message:
+${message}
+    `.trim(),
 
     html: `
-      <div style="font-family: Arial, sans-serif; line-height:1.6;">
-        <h2>New Portfolio Contact</h2>
+      <div style="
+        font-family: Arial, sans-serif;
+        max-width: 650px;
+        margin: 0 auto;
+        color: #111827;
+        line-height: 1.6;
+      ">
 
-        <hr/>
+        <h2 style="margin-bottom: 8px;">
+          New Portfolio Contact
+        </h2>
 
-        <p><strong>Name:</strong> ${name}</p>
+        <p style="color: #6b7280;">
+          Someone submitted the contact form on your portfolio.
+        </p>
 
-        <p><strong>Company:</strong> ${company || "Not Provided"}</p>
+        <hr style="border: 0; border-top: 1px solid #e5e7eb;" />
 
-        <p><strong>Email:</strong> ${email}</p>
+        <p>
+          <strong>Name:</strong><br />
+          ${name}
+        </p>
 
-        <p><strong>Subject:</strong> ${subject}</p>
+        <p>
+          <strong>Company:</strong><br />
+          ${company || "Not Provided"}
+        </p>
 
-        <p><strong>Message:</strong></p>
+        <p>
+          <strong>Email:</strong><br />
+          ${email}
+        </p>
 
-        <div style="padding:15px;background:#f5f5f5;border-radius:8px;">
+        <p>
+          <strong>Subject:</strong><br />
+          ${subject}
+        </p>
+
+        <p>
+          <strong>Message:</strong>
+        </p>
+
+        <div style="
+          background: #f8fafc;
+          padding: 18px;
+          border-radius: 10px;
+          border: 1px solid #e5e7eb;
+          white-space: pre-wrap;
+        ">
           ${message}
         </div>
 
-        <hr/>
+        <hr style="border: 0; border-top: 1px solid #e5e7eb; margin-top: 25px;" />
 
-        <small>
-          This email was sent from your portfolio contact form.
-        </small>
+        <p style="font-size: 13px; color: #6b7280;">
+          This message was sent through your portfolio contact form.
+        </p>
+
       </div>
     `,
   };

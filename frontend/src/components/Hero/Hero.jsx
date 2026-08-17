@@ -16,18 +16,24 @@ const Hero = () => {
         <h2 className="hero-role">
           Frontend Engineer
           <br />
-          <span>Building modern web applications with the MERN Stack.</span>
+          <span>
+            Building modern web applications with the MERN Stack.
+          </span>
         </h2>
 
         <p className="hero-description">
-          I build clean, responsive and scalable web applications with a strong
-          focus on performance, user experience and maintainable code.
+          I build clean, responsive and scalable web applications with a
+          strong focus on performance, user experience and maintainable code.
         </p>
 
         <div className="hero-buttons">
-          <Button href="/resume/Sumit-Salmuthe-Resume.pdf">
-            Resume
-          </Button>
+          <Button
+  href="/resume/Sumit-Salmuthe-Resume.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  Resume
+</Button>
 
           <Button href="#contact" variant="secondary">
             Contact
@@ -37,7 +43,10 @@ const Hero = () => {
 
       <div className="hero-right">
         <div className="hero-image">
-          <img src={profile} alt="Portrait of Sumit Salmuthe" />
+          <img
+            src={profile}
+            alt="Portrait of Sumit Salmuthe"
+          />
         </div>
       </div>
     </section>
